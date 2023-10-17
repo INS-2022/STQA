@@ -1,0 +1,100 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>gq.paxy</groupId>
+	<artifactId>stqa</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>stqa</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-firefox-driver</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-firefox-driver</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+		</dependency>
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-reload4j -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-reload4j</artifactId>
+</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-devtools-v116</artifactId>
+		</dependency>
+	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>3.8.1</version>
+			</dependency>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>3.8.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.seleniumhq.selenium</groupId>
+				<artifactId>selenium-firefox-driver</artifactId>
+				<version>4.12.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.seleniumhq.selenium</groupId>
+				<artifactId>selenium-firefox-driver</artifactId>
+				<version>4.12.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.seleniumhq.selenium</groupId>
+				<artifactId>selenium-api</artifactId>
+				<version>4.12.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.seleniumhq.selenium</groupId>
+				<artifactId>selenium-java</artifactId>
+				<version>4.12.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.seleniumhq.selenium</groupId>
+				<artifactId>selenium-devtools-v116</artifactId>
+				<version>4.12.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-reload4j</artifactId>
+				<version>2.0.9</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
