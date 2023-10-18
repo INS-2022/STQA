@@ -8,14 +8,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class P8 {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Exam\\Desktop\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 
 		WebDriver webDriver = new ChromeDriver();
 
-		webDriver.get("https://narenderkeswani.com/stqap8.html");
-		webDriver.findElement(By.name("fullname")).sendKeys("Narender Keswani");
-		webDriver.findElement(By.name("submit")).click();
-
+		webDriver.get("https://demo.automationtesting.in/Alerts.html");
+		Thread.sleep(5000);
+		webDriver.findElement(By.xpath("/html/body/div[1]/div/div/div/div[2]/div[1]/button")).click();
 		// Switching to Alert
 		Alert alert = webDriver.switchTo().alert();
 

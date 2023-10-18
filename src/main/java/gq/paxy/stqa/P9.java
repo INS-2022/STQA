@@ -1,6 +1,7 @@
 package gq.paxy.stqa;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,42 +12,24 @@ import org.openqa.selenium.support.ui.Select;
 public class P9 {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-		WebDriver wd = new ChromeDriver();
-		wd = new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Exam\\Desktop\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.saucedemo.com/");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		// By ID
+		driver.findElement(By.name("user-name")).sendKeys("standard_user");// locatorid
+		Thread.sleep(5000);
+		driver.findElement(By.id("password")).sendKeys("secret_sauce");// locaternam
+		Thread.sleep(5000);
+		driver.findElement(By.id("login-button")).click();// locator className
+		Thread.sleep(5000);
+		// Css Selector ID
 
-		wd.get("https://narenderkeswani.com/stqa9.html");
+		Select s = new Select(driver.findElement(By.xpath("/html/body/div/div/div/div[1]/div[2]/div/span/select")));
+		s.selectByVisibleText("Name (Z to A)");
 
-		Select s = new Select(wd.findElement(By.name("fromStn")));
-		Select t = new Select(wd.findElement(By.name("toStn")));
-		s.selectByVisibleText("KALYAN JN");
-		t.selectByVisibleText("GANAGAPUR ROAD");
-
-		String sMessage = s.getFirstSelectedOption().getText();
-		String tMessage = t.getFirstSelectedOption().getText();
-
-		System.out.println(sMessage);
-		System.out.println(tMessage);
-
-		Thread.sleep(2000);
-
-		Select list = new Select(wd.findElement(By.name("favFood")));
-
-		if (list.isMultiple()) {
-			list.selectByIndex(0);
-			list.selectByValue("vadavpav");
-			list.selectByVisibleText("Paneer");
-			System.out.println("Selected:");
-
-			List<WebElement> selected1 = list.getAllSelectedOptions();
-			for (WebElement el : selected1) {
-				System.out.println("Selected: " + el.getAttribute("value"));
-			}
-
-			Thread.sleep(5000);
-			list.deselectByIndex(3);
-			list.deselectAll();
-			System.out.println("Deselected");
-		}
+		Thread.sleep(5000);
+		driver.close();
 	}
 }
