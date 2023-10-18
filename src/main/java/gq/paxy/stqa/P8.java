@@ -9,21 +9,47 @@ public class P8 {
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Exam\\Desktop\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+				"/usr/bin/chromedriver");
 
 		WebDriver webDriver = new ChromeDriver();
 
 		webDriver.get("https://demo.automationtesting.in/Alerts.html");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		webDriver.findElement(By.xpath("/html/body/div[1]/div/div/div/div[2]/div[1]/button")).click();
+		Thread.sleep(2000);
 		// Switching to Alert
 		Alert alert = webDriver.switchTo().alert();
 
-		// Capturing alert message.
-		String alertMessage = webDriver.switchTo().alert().getText();
-
-		// Displaying alert message
-		System.out.println(alertMessage);
+		// Capturing and printing alert message.
+		System.out.println(webDriver.switchTo().alert().getText());
+		
+		alert.accept();
 		Thread.sleep(2000);
+		webDriver.findElement(By.xpath("/html/body/div[1]/div/div/div/div[1]/ul/li[2]/a")).click();
+		Thread.sleep(2000);
+		webDriver.findElement(By.xpath("/html/body/div[1]/div/div/div/div[2]/div[2]/button")).click();
+		Thread.sleep(2000);
+		// Switching to Alert
+		alert = webDriver.switchTo().alert();
+
+		// Capturing and printing alert message.
+		System.out.println(webDriver.switchTo().alert().getText());
+		alert.accept();
+
+		webDriver.findElement(By.xpath("/html/body/div[1]/div/div/div/div[1]/ul/li[3]/a")).click();
+		Thread.sleep(2000);
+		webDriver.findElement(By.xpath("/html/body/div[1]/div/div/div/div[2]/div[3]/button")).click();
+		Thread.sleep(2000);
+		// Switching to Alert
+		alert = webDriver.switchTo().alert();
+		alert.sendKeys("Prathamesh");
+		Thread.sleep(2000);
+		// Capturing and printing alert message.
+		System.out.println(webDriver.switchTo().alert().getText());
+		alert.accept();
+		System.out.println(webDriver.findElement(By.xpath("/html/body/div[1]/div/div/div/div[2]/div[3]/p")).getText());
+		
+		Thread.sleep(2000);
+		webDriver.close();
 	}
 }
