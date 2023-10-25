@@ -17,7 +17,7 @@ public class P2 {
 
 		if (a == 1) {
 			System.setProperty("webdriver.gecko.driver",
-					"/usr/local/bin/geckodriver");
+					WebDriverPathHelper.GECKO_DRIVER_PATH);
 			WebDriver driver = new FirefoxDriver();
 			String baseUrl = "http://demo.guru99.com/test/newtours/";
 			String expectedTitle = "Welcome: Mercury Tours";
@@ -37,7 +37,7 @@ public class P2 {
 			driver.close();
 		} else if (a == 2) {
 			System.setProperty("webdriver.chrome.driver",
-					"/usr/bin/chromedriver" + "" + ""
+					WebDriverPathHelper.CHROME_DRIVER_PATH + "" + ""
 							+ "" + "");
 			WebDriver driver = new ChromeDriver();
 			String baseUrl = "http://demo.guru99.com/test/newtours/";

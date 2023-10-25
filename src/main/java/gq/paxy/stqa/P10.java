@@ -4,12 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 public class P10 {
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"/usr/bin/chromedriver");
+				WebDriverPathHelper.CHROME_DRIVER_PATH);
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://demo.guru99.com/test/radio.html");
 		WebElement radio1 = driver.findElement(By.id("vfb-7-1"));

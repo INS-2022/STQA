@@ -9,7 +9,7 @@ public class P8 {
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"/usr/bin/chromedriver");
+				WebDriverPathHelper.CHROME_DRIVER_PATH);
 
 		WebDriver webDriver = new ChromeDriver();
 

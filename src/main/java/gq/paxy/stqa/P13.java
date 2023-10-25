@@ -14,7 +14,7 @@ public class P13 {
 	@Test(dataProvider = "testdata")
 	public void demoClass(String email, String password) throws InterruptedException {
 
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver", WebDriverPathHelper.CHROME_DRIVER_PATH);
 		driver = new ChromeDriver();
 
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");

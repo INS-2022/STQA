@@ -11,7 +11,7 @@ import org.openqa.selenium.By;
 public class P11 {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver", WebDriverPathHelper.CHROME_DRIVER_PATH);
 		WebDriver driver = new ChromeDriver();
 
         // Navigate to the jQuery UI Demo website
