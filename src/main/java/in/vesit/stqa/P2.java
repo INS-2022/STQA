@@ -1,6 +1,9 @@
 package in.vesit.stqa;
 
-
+/*
+ * Implement Webdriver in Chrome and Firefox.
+ * input 1 for Firefox and 2 for Chrome
+ */
 
 import org.openqa.selenium.WebDriver;
 

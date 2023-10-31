@@ -1,5 +1,7 @@
 package in.vesit.stqa;
-
+/*
+*Implement Browser commands and navigation Commands
+*/
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

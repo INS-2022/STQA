@@ -1,5 +1,9 @@
 package in.vesit.stqa;
 
+/*
+* Explicit Wait (Synchronization)
+*/
+
 import java.time.Duration;
 
 import org.openqa.selenium.Alert;

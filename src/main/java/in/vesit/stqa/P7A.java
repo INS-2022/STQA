@@ -1,5 +1,9 @@
 package in.vesit.stqa;
 
+/*
+* Implicit Wait (Synchronization)
+*/
+
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 

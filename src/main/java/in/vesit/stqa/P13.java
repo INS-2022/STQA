@@ -1,5 +1,9 @@
 package in.vesit.stqa;
 
+/*
+* Demonstrate data driven Framework
+*/
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,7 +27,6 @@ public class P13 {
 		driver.findElement(By.name("password")).sendKeys(password);
 		driver.findElement(By.cssSelector("button[type=submit]")).click();
 		Thread.sleep(5000);
-		;
 		Assert.assertTrue(driver.getCurrentUrl().matches("https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index"), "Invalid credentials");
 		System.out.println("Login successful");
 	}
@@ -35,9 +38,7 @@ public class P13 {
 
 	@DataProvider(name = "testdata")
 	public Object[][] testDataExample() {
-		ReadExcelFile configuration = new ReadExcelFile("C:\\Users\\paxyi\\git\\STQA\\p13test.xlsx");
-		
-
+		ReadExcelFile configuration = new ReadExcelFile("p13test.xlsx");
 		int rows = configuration.getRowCount(0);
 
 		Object[][] signin_credentials = new Object[rows][2];

@@ -1,5 +1,9 @@
 package in.vesit.stqa;
 
+/*
+* Demonstrate different types of alerts
+*/
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

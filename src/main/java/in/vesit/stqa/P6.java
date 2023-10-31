@@ -1,5 +1,9 @@
 package in.vesit.stqa;
 
+/*
+* Demonstrate the Locator (id, css selector, path)
+*/
+
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 

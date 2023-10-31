@@ -1,5 +1,9 @@
 package in.vesit.stqa;
 
+/*
+* Demonstrate Command Buttons, Radio buttons & and text boxes. Waits command in seleniumDemonstrate Command Buttons, Radio buttons & and text boxes. Waits command in selenium
+*/
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

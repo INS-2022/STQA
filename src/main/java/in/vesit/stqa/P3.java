@@ -1,5 +1,9 @@
 package in.vesit.stqa;
 
+/*
+ * Demonstrate handling multiple frames in selenium.
+ */
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
