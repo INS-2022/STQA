@@ -35,7 +35,8 @@ public class P13 {
 
 	@DataProvider(name = "testdata")
 	public Object[][] testDataExample() {
-		ReadExcelFile configuration = new ReadExcelFile("/home/paxy/eclipse-workspace/stqa/p13test.xlsx");
+		ReadExcelFile configuration = new ReadExcelFile("C:\\Users\\paxyi\\git\\STQA\\p13test.xlsx");
+		
 
 		int rows = configuration.getRowCount(0);
 
