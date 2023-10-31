@@ -1,4 +1,4 @@
-package gq.paxy.stqa;
+package in.vesit.stqa;
 
 import java.io.File;
 import java.io.FileInputStream;

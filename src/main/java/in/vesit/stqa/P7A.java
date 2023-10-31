@@ -1,16 +1,17 @@
-package gq.paxy.stqa;
+package in.vesit.stqa;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class P7 {
+public class P7A {
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", WebDriverPathHelper.CHROME_DRIVER_PATH);
 		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String eTitle = "Demo Guru99 Page";
 		String aTitle = "";
 

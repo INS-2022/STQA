@@ -1,4 +1,4 @@
-package gq.paxy.stqa;
+package in.vesit.stqa;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;

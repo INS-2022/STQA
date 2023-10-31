@@ -1,5 +1,6 @@
-package gq.paxy.stqa;
+package in.vesit.stqa;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -16,7 +17,7 @@ public class P9 {
 				WebDriverPathHelper.CHROME_DRIVER_PATH);
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.saucedemo.com/");
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		// By ID
 		driver.findElement(By.name("user-name")).sendKeys("standard_user");// locatorid
 		Thread.sleep(5000);

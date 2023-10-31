@@ -1,4 +1,4 @@
-package gq.paxy.stqa;
+package in.vesit.stqa;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
